@@ -105,7 +105,7 @@ body {
     height: 50px;
 }
 
-#analysis .left .totThisMonth{
+#analysis .left .totThisMonth h2{
     color: hsla(29,41%,14%,0.5);
     font-size: 0.8em;
 }
