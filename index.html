@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="data.js"></script>
+
+  <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="data">
+      <div class="text">
+        <h1>
+          My balance
+        </h1>
+      </div>
+      <div class="balance">
+        $921.48
+      </div>
+    </div>
+    <div class="circulos">
+      <div class="transparente"></div>
+      <div class="escuro"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="primeira">
+      <h1 class="title">
+        Spending - Last 7 days
+      </h1>
+    </section>
+    <section id="graphAndDesc">
+      <div class="graph">
+      </div>
+    </section>
+    <section id="analysis">
+      <div class="left">
+        <div class="totThisMonth">
+          Total this month
+        </div>
+        <div class="total"></div>
+      </div>
+      <div class="right">
+        <div class="increase">
+          +2.4%
+        </div>
+        <div class="compare">
+          from last month
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/ruan-santos-a1318a219/">Ruan Santos</a>.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

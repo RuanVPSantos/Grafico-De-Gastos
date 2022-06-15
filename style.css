@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Overpass:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(246,233,220);
+    justify-content: center;
+    position: relative;
+}
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --dark-brown: hsl(28, 10%, 20%, 0.8);
+}
+
+#graphAndDesc {
+    width: 100%;
+}
+
+#graphAndDesc .graph {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#graphAndDesc .graph .column{
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+}
+
+#graphAndDesc .graph .column:hover {
+    filter: brightness(1.2);
+}
+
+.selected {
+    background-color: var(--cyan);
+}
+
+.unselected {
+    background-color: var(--soft-red);
+}
+
+#graphAndDesc .graph .floating {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-brown);
+    color: white;
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#graphAndDesc .graph .duo:hover .floating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    position: relative;
+    top: -10px;
+    transition: 0.3s;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.plaquinha {
+    position: relative;
+    top: -10px;
+    transition: 0.3s;
+    background-color: var(--dark-brown);
+    color: white;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#analysis {
+    display: flex;
+    height: 25%;
+    justify-content: space-between;
+    color: hsl(29,41%,14%);
+    align-items: center;
+    border-top: solid 1px hsla(29,41%,14%, 0.1);
+}
+
+#analysis .left {
+    height: 50px;
+}
+
+#analysis .left .totThisMonth{
+    color: hsla(29,41%,14%,0.5);
+    font-size: 0.8em;
+}
+
+#analysis .right {
+    text-align: end;
+    font-size: 0.8em;
+    margin-bottom: -18px;
+}
+
+#analysis .right .compare {
+    color: hsla(29,41%,14%,0.5);
+}
+
+#analysis .left .total {
+    font-size: 1.6em;
+}
+
+.total {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    height: 400px;
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    color: hsl(29,41%,14%);
+}
+
+header {
+    background-color: var(--soft-red);
+    height: 80px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 30px;
+    justify-content:space-between;
+    position: relative;
+    top: 100px
+}
+
+header .data .text h1 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+header .data .balance {
+    font-size: 1.6em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+header .circulos {
+    position: relative;
+}
+
+header .circulos .transparente {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid white 2px;
+    position: absolute; 
+    z-index: 1;
+    top: -20px;
+    right: 50px; 
+}
+
+header .circulos .escuro {
+    position: absolute;
+    z-index: 0;
+    bottom: calc(50% - 20px);
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(57,35,20);
+    border: solid rgb(57,35,20) 2px;
+}
+.attribution {
+    position: relative;
+    z-index: 2;
+    margin-top: 260px;
+}
